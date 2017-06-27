@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+      
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/jlantunez/webslides
+      
+      Thanks,
+      @jlantunez.
+    -->
+    
+    <!-- SEO -->
+    <title>WebSlides Documentation: Components</title>
+    <meta name="description" content="Learn WebSlides in simple steps starting from basic to advanced concepts with examples.">
+    
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/base.css">
+    
+    <!-- CSS Colors -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/colors.css">
+    
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+    
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+    
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WebSlides Components" /> <!-- EDIT -->
+    <meta property="og:description" content="Learn WebSlides in simple steps starting from basic to advanced concepts with examples."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:25:31"> <!-- EDIT -->
+    <meta property="og:image" content="static/images/share-webslides.jpg" > <!-- EDIT -->
+    
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides Components"> <!-- EDIT -->
+    <meta name="twitter:description" content="Learn WebSlides in simple steps starting from basic to advanced concepts with examples."> <!-- EDIT -->
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+    
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+    
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <!-- <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="/index.html" title="WebSlides">WebSlides</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/jlantunez/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/jlantunez" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>jlantunez</em></a></li>
+        </ul>
+      </nav> 
+    </header> -->
+    
+    <main role="main">
+      <article id="webslides">
+      <section class="bg-black slide-top">
+          <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
+          <span class="background dark" style="background-image:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1498559628911&di=fe07ba66dd7d8231b5e7aa9bee82d108&imgtype=0&src=http%3A%2F%2Fimg01.chrstatic.com%2Fimages%2Fphoto%2F201606%2F1465960594384ery3fa.jpg')"></span>
+          <div class="wrap aligncenter">
+            <h1 class="text-landing text-shadow"><strong>歌志轩油拉面国金店<br>外卖用户评论分析</br></strong></h1>
+          </div>
+          <footer class="aligncenter" style="padding-bottom: 6rem">
+            <div class="wrap">
+              <p>
+                <span class="aligncenter"> <a href="#" title="Instagram">
+                <img class="whitelogo" src="static/images/logos/金科LOGO3.png">
+                </a></span>
+                <span class="alignright">
+                </span>
+              </p>
+            </div>
+          </footer>
+        </section>
+      <section>
+          <div class="wrap">
+            <div id="chart1" class="alignleft size-50" style="width: 600px;height:400px;"></div>
+            <h2>歌志轩油拉面外卖评论数</h2>
+            <p><code>2017.4.18-2017.6.25</code></p>
+            <p>歌志轩油拉面开始外卖服务的三个月时间内共产生221条用户评论，其中无实际内容的默认评论（均为好评）为165条，有效评论为56条，分析主要为有效评论部分。</p>
+            <p><strong>评论比例</strong>:<br> 美团最高，占到82.35%<br> 饿了么和百度分别占比10.86%和6.79%</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+      <section>
+          <div class="wrap">
+            <div id="chart2" class="alignright size-50" style="width: 600px;height:400px;"></div>
+            <h2>外卖平台每日评论数</h2>
+            <p><code>统计为有内容评论</code></p>
+            <p>有效评论数量较少，可利用数据不多，但基本每日都有评论产生，店家有一定关注度</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div id="chart3" class="alignleft size-50" style="width: 600px;height:400px;"></div>
+            <h2>评论主题</h2>
+            <p><code>产品/服务</code></p>
+            <p>外卖服务相关评论占2成，产品相关评论占8成</p>
+            <p>外卖用户更关注的还是产品质量</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div id="chart4" class="alignright size-50" style="width: 600px;height:400px;"></div>
+            <h2>评论类型</h2>
+            <p><code>好评/差评</code></p>
+            <p>对服务方面负面评价比例较大，产品方面评价整体较好</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div id="chart5" class="alignleft size-50" style="width: 800px;height:500px;"></div>
+            <h2>关键字</h2>
+            <p><code>产品/服务</code></p>
+            <p><strong>用户比较满意的点</strong>:<br>拉面味道<br>包装好<br>电话服务很贴心</p>
+            <p><strong>用户意见较大的地方</strong>:<br>漏送食品或餐具<br>叉烧和汤较少</p>
+          </div>
+          </section>
+          <section>
+          <div class="wrap">
+            <div id="chart6" class="alignleft size-50" style="width: 800px;height:500px;"></div>
+            <h4>解决用户严重不满意问题</h4>
+            <p><code>产品/服务</code></p>
+            <p><strong>叉烧少或汤少</strong>:<br>考虑适量增加叉烧和汤汁分量</p>
+            <p><strong>漏送或没盖好盖子</strong>:<br>外卖打包前双人复核</p>
+            <p><strong>面条冷</strong>:<br>用户教育问题，应更明确标出冷面条原因和吃法</p>
+          </div>
+          </section>
+      </article>
+    </main>
+    <!--main-->
+    
+    <!-- jQuery (required for slides to work) -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.6.2/echarts.min.js"></script>
+    <script src="static/js/webslides.js"></script>
+    
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+        var myChart1 = echarts.init(document.getElementById('chart1'));
+        var myChart2 = echarts.init(document.getElementById('chart2'));
+        var myChart3 = echarts.init(document.getElementById('chart3'));
+        var myChart4 = echarts.init(document.getElementById('chart4'));
+        var myChart5 = echarts.init(document.getElementById('chart5'));
+        var myChart6 = echarts.init(document.getElementById('chart6'));
+
+        // 指定图表的配置项和数据
+        var option1 = {
+            title : {
+              text: '外卖用户评论比例',
+              subtext: '共计221条',
+              x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['美团','饿了么','百度外卖']
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            series : [
+                {
+                    name: '访问来源',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:182, name:'美团'},
+                        {value:24, name:'饿了么'},
+                        {value:15, name:'百度外卖'}
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ],
+            color: ['#FFD700','#4876FF','#EE0000']
+        };
+
+        var option2 = {
+            title: {
+                text: '歌志轩外卖平台用户评论'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['评论条数']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['4.8','4.18','4.20','4.29','5.1','5.6','5.7','5.10','5.12','5.14','5.15','5.23','5.25','5.26','5.28','5.29','5.30','5.31','6.2','6.3','6.4','6.5','6.6','6.8','6.9','6.10','6.11','6.12','6.13','6.15','6.16','6.17','6.18','6.19','6.20','6.21','6.22','6.24','6.25']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'评论条数',
+                    type:'line',
+                    stack: '总量',
+                    data:[1, 3, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 2, 1, 5, 3, 1, 3, 2, 2, 3, 3, 1, 3, 4, 1, 4, 2, 1, 5, 1, 2, 4, 1, 1, 1, 3, 2, 1]
+                },
+            ]
+        };
+        var option3 = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                data:['服务相关','产品相关']
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            calculable : true,
+            series: [
+                {
+                    name:'评论主题',
+                    type:'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data:[
+                        {value:15, name:'服务相关'},
+                        {value:57, name:'产品相关'}
+                    ]
+                },
+            ],
+            color:['#91c7ae','#FFD700', '#546570', '#c4ccd3']
+        };
+        var option4 = {
+            title : {
+                text: '评论类型',
+                subtext: '服务/产品',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                x : 'center',
+                y : 'bottom',
+                data:['好评','中评','差评']
+            },
+            toolbox: {
+                show : true,
+                feature : {
+                    mark : {show: true},
+                    magicType : {
+                        show: true,
+                        type: ['pie', 'funnel']
+                    },
+                    saveAsImage : {show: true}
+                }
+            },
+            calculable : true,
+            series : [
+                {
+                    name:'服务相关',
+                    type:'pie',
+                    radius : [30, 110],
+                    center : ['25%', '50%'],
+                    data:[
+                        {value:7, name:'好评'},
+                        {value:5, name:'中评'},
+                        {value:3, name:'差评'}
+                    ]
+                },
+                {
+                    name:'产品相关',
+                    type:'pie',
+                    radius : [30, 110],
+                    center : ['75%', '50%'],
+                    data:[
+                        {value:46, name:'好评'},
+                        {value:5, name:'中评'},
+                        {value:6, name:'差评'}
+                    ]
+                }
+            ]
+        };
+        var labelRight = {
+            normal: {
+                position: 'right'
+            }
+        };
+        option5 = {
+            title: {
+                text: '关键字',
+                subtext: '不满意/满意',
+            },
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            grid: {
+                top: 80,
+                bottom: 30
+            },
+            xAxis: {
+                type : 'value',
+                position: 'top',
+                splitLine: {lineStyle:{type:'dashed'}},
+            },
+            yAxis: {
+                type : 'category',
+                axisLine: {show: false},
+                axisLabel: {show: false},
+                axisTick: {show: false},
+                splitLine: {show: false},
+                data : ['汤少', '外送快', '叉烧少', '电话服务贴心', '不好吃', '味道好', '漏送或洒出', '包装好']
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            series : [
+                {
+                    name:'生活费',
+                    type:'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            formatter: '{b}'
+                        }
+                    },
+                    data:[
+                        -2,
+                        5,
+                        -7,
+                        5,
+                        -3,
+                        24,
+                        -10,
+                        14
+                    ]
+                }
+            ]
+        };
+        var option6 = {
+            title : {
+                text: '评分3分以下的评论',
+                subtext: '严重负面情绪',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['叉烧少','漏送','面条冷','味道差','外送慢','汤少','汤没盖好洒出']
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            series : [
+                {
+                    name: '访问来源',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:4, name:'叉烧少'},
+                        {value:3, name:'漏送'},
+                        {value:3, name:'面条冷'},
+                        {value:2, name:'味道差'},
+                        {value:1, name:'外送慢'},
+                        {value:1, name:'汤少'},
+                        {value:1, name:'汤没盖好洒出'},
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart1.setOption(option1);
+        myChart2.setOption(option2);
+        myChart3.setOption(option3);
+        myChart4.setOption(option4);
+        myChart5.setOption(option5);
+        myChart6.setOption(option6);
+    </script>
+  </body>
+</html>
